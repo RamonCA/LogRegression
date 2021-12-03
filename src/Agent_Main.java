@@ -20,7 +20,7 @@ public class Agent_Main extends Agent {
                 for (int i = 0; i < arrValues.length; i++) {
                     inputs[i] = Double.parseDouble(arrValues[i]);
                 }
-                System.out.println("Calculando");
+                //System.out.println("Calculando");
                 Clasification cls = new Clasification(test2.generateWeights(), inputs);
                 System.out.println(cls.clasification());
             }
