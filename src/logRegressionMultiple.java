@@ -3,14 +3,14 @@ import java.util.List;
 
 public class logRegressionMultiple {
 
-    List<Data> dataSet = dataSetSimple.readData("dt2.txt");
+    List<Data> dataSet = dataSetSimple.readData("inputs.txt");
     int size = dataSet.size();
 
     int sizeInner = dataSet.get(0).inputs.size();
 
     private final double[][] input_x = new double [size][sizeInner + 1];
     private final double[][] output_y = new double [size][1];
-    double[] weights = new double [size];
+    double[] weights = new double [sizeInner + 1];
 
     private void getDataMultiple(){
         for (int i = 0; i < size; i++){
