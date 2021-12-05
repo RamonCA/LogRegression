@@ -22,7 +22,7 @@ public class logRegressionMultiple {
             output_y[i][0] = aux.getOutput_y();
 
         }
-        //System.out.println(Arrays.deepToString(input_x));
+        System.out.println(Arrays.deepToString(input_x));
         Arrays.fill(weights, 0.0);
     }
 
