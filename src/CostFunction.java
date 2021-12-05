@@ -12,7 +12,7 @@ public class CostFunction {
 
     public double [] costFuncMin() {
         double [] answer = new double[input_x[0].length];
-        for (int i = 0; i < 25000; i++) {
+        for (int i = 0; i < 8000; i++) {
             double[] tempWeights = new double[weights.length];
             double sum = 0;
             weightSum(tempWeights, sum);
